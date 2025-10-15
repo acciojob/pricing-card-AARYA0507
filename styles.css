@@ -1,1 +1,83 @@
 /*  your css code here. If applicable */
+/* General body styling to center the card /
+body {
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+margin: 0;
+background-color: #f0f0f0;
+font-family: 'Times New Roman', Times, serif; / Matching the serif font style */
+text-align: center;
+}
+
+/* 1. Card: Main container styling /
+.card {
+/ Required properties: /
+width: 280px; / Slightly adjusted width for better appearance */
+padding: 15px;
+background-color: #ffffff;
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+
+/* Aesthetics */
+border-radius: 12px;
+max-width: 90vw;
+overflow: hidden; /* Ensures image corners are contained */
+
+}
+
+/* 2. Image styling /
+.card img {
+width: 100%; / Image fits within the card width /
+height: auto;
+display: block;
+/ Added rounded corners to the image top to match the card visually */
+border-radius: 8px;
+}
+
+/* 3. Title (h1) styling */
+.card-title {
+font-size: 1.8em;
+margin: 15px 0 5px 0;
+font-weight: bold;
+color: #333;
+}
+
+/* 4. Pricing Information (p) styling */
+.card-price {
+font-size: 1.1em;
+margin-bottom: 10px;
+color: #555;
+}
+
+/* 5. Description (p) styling */
+.card-description {
+font-size: 0.9em;
+padding: 0 10px;
+line-height: 1.4;
+color: #666;
+margin-bottom: 25px;
+}
+
+/* 6. Buy Now Button styling /
+.buy-button {
+/ Required properties: /
+padding: 10px 30px;
+background-color: #f1788d; / Pink color matching the image /
+color: white;
+border-radius: 25px; / Pill shape for the border-radius */
+
+/* Aesthetics */
+border: none;
+font-size: 1em;
+cursor: pointer;
+font-weight: 600;
+transition: background-color 0.3s, transform 0.1s;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+.buy-button:hover {
+background-color: #e86379;
+transform: translateY(-1px);
+}
